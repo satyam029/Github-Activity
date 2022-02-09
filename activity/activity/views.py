@@ -15,7 +15,7 @@ def home(request):
     # # print(page)
     # user = User.objects.get(username = request.user)
     # social = user.social_auth.get(provider="github")
-    response = requests.get("https://api.github.com/users/saurav-bot/events")
+    response = requests.get("https://api.github.com/users/satyam029/events")
     response = response.json()
     # print(len(response))
     ctx = {'data':response}
